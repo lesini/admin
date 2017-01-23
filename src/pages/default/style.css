@@ -1,0 +1,109 @@
+.workspace {
+    display: flex;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.widgets {
+    width: 200px;
+    padding: 20px;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-right: 1px solid #9ee9f7;
+}
+.layer {
+    width: 100%;
+    cursor: move;
+    margin-bottom: 20px;
+    background-color: #eaeaea;
+    outline: 1px solid #cfcfcf;
+}
+.layer__1,
+.layer__2,
+.layer__3,
+.layer__4 {
+    height: 50px;
+}
+.layer__5 {
+    height: 100px;
+}
+.layer__split {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px dashed #aaa;
+}
+.layer__split--last {
+    border-width: 0 !important;
+}
+.layer__2 .layer__split {
+    width: 50%;
+}
+.layer__3 .layer__split {
+    width: 33.33333333%;
+}
+.layer__4 .layer__split {
+    width: 25%;
+}
+.layer__5 .layer__split {
+    width: 100%;
+    height: 50%;
+    border-right: 0;
+    border-bottom: 1px dashed #aaa;
+}
+.config {
+    width: 200px;
+    padding: 20px;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-left: 1px solid #9ee9f7;
+}
+.input__box {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    color: #5e6d82;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #9ee9f7;
+}
+.save__btn,
+.cancel__btn {
+    display: block;
+    width: 100%;
+    height: 42px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #5ed1e6;
+}
+.canvas {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+}
+.template {
+    padding: 1px;
+    background-color: #fff;
+    transition: width .5s, height .5s;
+}
+.template--pc {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.template--wap {
+    width: 375px;
+    height: 667px;
+    overflow-x: hidden;
+}
+.drop {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+}
